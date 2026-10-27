@@ -10,7 +10,7 @@ public class Main {
         Foto foto = new Foto("foto_vacaciones.jpg");
 
         Producto producto = new Impresion(
-                1,
+                 1,
                 "Color",
                 foto);
 
