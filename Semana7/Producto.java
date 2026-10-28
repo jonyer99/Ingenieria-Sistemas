@@ -12,6 +12,10 @@ public class Producto {
         System.out.println("numero de producto:" + numero);
         
     }
+
+    public void pagardeNuevo(){
+        
+    }
     
     
 }

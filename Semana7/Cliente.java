@@ -7,7 +7,7 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public string getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
@@ -19,15 +19,13 @@ public class Cliente {
     public String toString() {
         return "Cliente [cedula=" + cedula + ", nombre=" + nombre + "]";
     }
-    @Override 
+    
     public void mostrarInformacion(){
-        System.out.pintln("producto:Inpresion");
-        System.out.println("numero:" + numero);
-        System.out.println("color:" + color);
+        System.out.println("producto:Inpresion");
+        System.out.println("numero:" + cedula);
+        System.out.println("nombre:" + nombre);
         
-        if (hoja != null){
-            System.out.println("foto:" + hoja.grtfichero());
-        }
+       
     }
     
 }

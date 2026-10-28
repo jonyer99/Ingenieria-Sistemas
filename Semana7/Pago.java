@@ -1,5 +1,7 @@
 public class Pago {
-    public abstract void procesarpago(doublevalor);
+    public void procesarpago(double valor){
+
+    };
 
     
 }

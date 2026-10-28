@@ -1,14 +1,12 @@
-public class Impresion xtends producto {
+public class Impresion extends Producto {
     private String color;
-    private foto hoja
-    
-    public Impresion(int numero, String color, foto hoja) {
+    private Foto hoja;
+
+    public Impresion(int numero, String color, Foto hoja) {
 
         super(numero);
         this.color = color;
         this.hoja = hoja;
     };
-    
 
-    
 }
