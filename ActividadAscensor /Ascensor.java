@@ -1,4 +1,3 @@
-package ActividadAscensor ;
 
 public class Ascensor {
     // 1. Atributos (Lo que el ascensor "conoce" o "tiene")
@@ -22,4 +21,3 @@ public class Ascensor {
         System.out.println("Las puertas se han cerrado.");
     }
 }
-

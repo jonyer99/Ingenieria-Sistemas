@@ -1,3 +1,5 @@
+
+
 public class BotonPiso extends Boton {
     private String direccion; // "SUBIR" o "BAJAR"
 
