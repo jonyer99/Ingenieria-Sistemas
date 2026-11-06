@@ -1,5 +1,4 @@
-public class SistemaControl {
-    import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SistemaControl {
@@ -23,5 +22,4 @@ public class SistemaControl {
         ascensor.abrirPuertas();
         System.out.println("[SistemaControl] Destino alcanzado con éxito.");
     }
-}
 }

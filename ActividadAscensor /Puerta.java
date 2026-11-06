@@ -1,5 +1,5 @@
 public class Puerta {
-    public class Puerta {
+    
     private String estado; // "ABIERTA", "CERRADA"
     private boolean sensorObstaculo;
 
