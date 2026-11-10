@@ -1,4 +1,4 @@
-public class Main {
+public class AscensorMain {
     public static void main(String[] args) {
         System.out.println("=== INICIANDO SISTEMA DE CONTROL DE ASCENSOR ===");
 

@@ -11,4 +11,5 @@ public class BotonPiso extends Boton {
     public String getDireccion() {
         return direccion;
     }
+    
 }
