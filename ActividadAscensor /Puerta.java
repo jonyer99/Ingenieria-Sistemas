@@ -13,12 +13,13 @@ public class Puerta {
     }
 
     public void cerrar() {
-        if (!sensorObstaculo) {
-            this.estado = "CERRADA";
-            System.out.println("-> Las puertas se han cerrado.");
-        } else {
+        if (sensorObstaculo) {
             System.out.println("-> ¡ALERTA! Obstáculo detectado en la puerta. Abriendo de nuevo...");
             abrir();
+            this.sensorObstaculo = false; // ¡Corrección! Retiramos el obstáculo para permitir el cierre futuro
+        } else {
+            this.estado = "CERRADA";
+            System.out.println("-> Las puertas se han cerrado.");
         }
     }
 

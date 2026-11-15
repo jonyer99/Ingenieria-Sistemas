@@ -17,10 +17,29 @@ public class AscensorMain {
         System.out.println("\n--- Prueba de Selección en Cabina ---");
         botonDestino.presionar(); 
 
-        // 4. Simulamos el movimiento y apertura de puertas
-        System.out.println("\n--- Operación del Ascensor ---");
+        // 4. Simulamos el movimiento y apertura de puertas de la cabina
+        System.out.println("\n--- Operación Normal del Ascensor ---");
         miAscensor.abrirPuertas();
         miAscensor.cerrarPuertas();
+
+        // 5. Probando la Puerta de un Piso en específico (PuertaPiso)
+        System.out.println("\n--- Prueba de Puerta de Piso (Exterior) ---");
+        PuertaPiso puertaPiso3 = new PuertaPiso(3);
+        puertaPiso3.abrir();
+        puertaPiso3.cerrar();
+
+        // 6. Prueba de seguridad corregida: Sensor de obstáculos con ciclo completo
+        System.out.println("\n--- Prueba de Sensor de Obstáculos ---");
+        Puerta puertaPrueba = new Puerta();
+        puertaPrueba.abrir(); 
+        
+        // Simulamos el obstáculo y tratamos de cerrar
+        puertaPrueba.setSensorObstaculo(true); 
+        puertaPrueba.cerrar(); // Esto disparará la alerta y reabrirá la puerta
+        
+        // Intentamos cerrar nuevamente tras haberse despejado el obstáculo
+        System.out.println("Intentando cerrar nuevamente tras retirar el obstáculo...");
+        puertaPrueba.cerrar(); 
 
         System.out.println("\n=== PRUEBAS FINALIZADAS CON ÉXITO ===");
     }

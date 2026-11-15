@@ -11,6 +11,10 @@ public class PuertaPiso extends Puerta {
         super.abrir();
         System.out.println("Puerta exterior del piso " + numeroPiso + " abierta.");
     }
+   
+
+
+
 
     public int getNumeroPiso() {
         return numeroPiso;
