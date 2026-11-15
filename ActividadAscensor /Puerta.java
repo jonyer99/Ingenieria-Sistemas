@@ -1,5 +1,4 @@
 public class Puerta {
-    
     private String estado; // "ABIERTA", "CERRADA"
     private boolean sensorObstaculo;
 
@@ -23,10 +22,7 @@ public class Puerta {
         }
     }
 
-    // Getters y Setters
     public String getEstado() { return estado; }
     public boolean isSensorObstaculo() { return sensorObstaculo; }
     public void setSensorObstaculo(boolean sensorObstaculo) { this.sensorObstaculo = sensorObstaculo; }
-}
-    
 }

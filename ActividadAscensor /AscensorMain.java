@@ -10,12 +10,12 @@ public class AscensorMain {
         System.out.println("\n--- Prueba de Llamado en Piso ---");
         System.out.println("Piso actual del botón: " + botonLlamado.getNumeroPiso());
         System.out.println("Dirección solicitada: " + botonLlamado.getDireccion());
-        botonLlamado.presionar(); // Enciende la luz del botón del piso
+        botonLlamado.presionar(); 
 
         // 3. Probamos los botones de la cabina (Herencia de BotonCabina)
         BotonCabina botonDestino = new BotonCabina(1, 5);
         System.out.println("\n--- Prueba de Selección en Cabina ---");
-        botonDestino.presionar(); // Registra el destino y enciende la luz
+        botonDestino.presionar(); 
 
         // 4. Simulamos el movimiento y apertura de puertas
         System.out.println("\n--- Operación del Ascensor ---");
