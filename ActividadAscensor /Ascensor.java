@@ -2,7 +2,7 @@ public class Ascensor {
     private int pisoActual;
     private int pisoMaximo;
     private int pisoMinimo;
-    private PuertaAscensor puertaCabina; // Relación de Composición
+    private PuertaAscensor puertaCabina; // Relación Composición
 
     // Constructor que inicializa el ascensor en el piso 1 con un límite de 5 pisos
     public Ascensor() {
